@@ -1,0 +1,12 @@
+{
+	"methods": {
+		"XSLT": {
+			"timeStamp": "2022-01-04T16:22:33.127Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true,
+				"preemptive": "capable"
+			}
+		}
+	}
+}
