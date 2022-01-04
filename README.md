@@ -31,3 +31,6 @@ End if
 * `xsltproc` is universal (Apple Silicon+Intel) and static.
 * `xsltproc` is codesigned and notarised.
 * also Windows 64-bit.
+* shared component class, support binary mode.
+
+The executable is intentionally outside of `/RESOURCES/` to avoid invalid signature and bad UNIX permisson on client/server.
