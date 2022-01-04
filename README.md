@@ -13,3 +13,4 @@ XSLT wrapper to simulate old 32-bit feature
 
 * `xsltproc` is universal (Apple Silicon+Intel) and static.
 * `xsltproc` is codesigned and notarised.
+* also Windows 64-bit.
