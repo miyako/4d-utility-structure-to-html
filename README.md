@@ -5,6 +5,8 @@
 # 4d-utility-structure-to-html
 XSLT wrapper to simulate old 32-bit feature
 
+c.f. [Exporting and importing structure definitions](https://doc.4d.com/4Dv19/4D/19/Exporting-and-importing-structure-definitions.300-5416829.en.html)
+
 #### Usage
 
 ```4d
