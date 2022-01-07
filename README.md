@@ -39,6 +39,4 @@ End if
 
 The executable is intentionally outside of `/RESOURCES/` to avoid invalid signature and bad UNIX permisson on client/server.
 
-The function takes advantage of `4D.File` and `4D.Folder` but file system paths must be avoided since the path is eventually passed to `LAUNCH EXTERNAL PROCESS`.
-
 If you have trouble with `xsltproc` code signature, try install from [`.dmg`](https://github.com/miyako/4d-utility-structure-to-html/releases/tag/0.0.1).
