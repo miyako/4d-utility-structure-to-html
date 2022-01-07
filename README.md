@@ -14,8 +14,7 @@ $XSLT:=XSLT  //a shared component class
 
 $o:=$XSLT.new()
 
-//must pass full platform path
-$catalog:=Folder(Get 4D folder(Current resources folder); fk platform path).file("InvoicesDemo.xml")
+$catalog:=Folder(fk resources folder).file("InvoicesDemo.xml")
 
 //must run in local project (i.e. on the server)
 $status:=$o.toHtml($catalog)
