@@ -5,6 +5,8 @@
 # 4d-utility-structure-to-html
 XSLT wrapper to simulate old 32-bit feature
 
+c.f. [Exporting and importing structure definitions](https://doc.4d.com/4Dv19/4D/19/Exporting-and-importing-structure-definitions.300-5416829.en.html)
+
 #### Usage
 
 ```4d
@@ -38,3 +40,5 @@ End if
 The executable is intentionally outside of `/RESOURCES/` to avoid invalid signature and bad UNIX permisson on client/server.
 
 The function takes advantage of `4D.File` and `4D.Folder` but file system paths must be avoided since the path is eventually passed to `LAUNCH EXTERNAL PROCESS`.
+
+If you have trouble with `xsltproc` code signature, try install from [`.dmg`](https://github.com/miyako/4d-utility-structure-to-html/releases/tag/0.0.1).
