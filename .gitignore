@@ -1,2 +1,4 @@
 *.DS_Store
 HOST.4dbase/Components/structure-to-html.4dbase/userPreferences.*
+HOST.4dbase/Components/structure-to-html.4dbase/Project/DerivedData/CompiledCode/*
+HOST.4dbase/Components/structure-to-html.4dbase/Data/*

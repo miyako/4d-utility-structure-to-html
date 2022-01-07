@@ -6,6 +6,15 @@ Class constructor
 	This:C1470.HTML:=This:C1470.getFileHtml()
 	This:C1470.IMAGES:=This:C1470.getFolderImages()
 	
+Function _expandPath($in : Object)->$out : Object
+	
+	Case of 
+		: (OB Instance of:C1731($in; 4D:C1709.File))
+			$out:=File:C1566($in.platformPath; fk platform path:K87:2)
+		: (OB Instance of:C1731($in; 4D:C1709.Folder))
+			$out:=Folder:C1567($in.platformPath; fk platform path:K87:2)
+	End case 
+	
 Function show($text : Text)
 	
 	$tempFolder:=Folder:C1567(Temporary folder:C486; fk platform path:K87:2).folder(Generate UUID:C1066)
@@ -36,6 +45,8 @@ Function toHtml($catalog : 4D:C1709.File; $params : Object)->$status : Object
 Function apply($xsl : 4D:C1709.File; $catalog : 4D:C1709.File; $params : Object)->$status : Object
 	
 	$status:=New object:C1471("success"; False:C215)
+	
+	$catalog:=This:C1470._expandPath($catalog)
 	
 	var $param; $stringparam : Text
 	
